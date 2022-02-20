@@ -15,6 +15,6 @@ terraform {
   backend "s3" {
     bucket = "mytfstate-devop"
     key    = "dev/terraform.tfstate"
-    region = "us-east-2"
+    region = "us-west-2"
   }
 }
