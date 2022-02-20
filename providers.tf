@@ -11,3 +11,10 @@ provider "aws" {
    region = "us-west-2"
    profile = "default"
 }
+terraform {
+  backend "s3" {
+    bucket = "mytfstate-devop"
+    key    = "dev/terraform.tfstate"
+    region = "us-east-2"
+  }
+}
