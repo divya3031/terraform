@@ -16,5 +16,6 @@ terraform {
     bucket = "mytfstate-devop"
     key    = "dev/terraform.tfstate"
     region = "us-west-2"
+    dynamodb_table = "sampletable"
   }
 }
